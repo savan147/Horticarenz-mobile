@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:theme="@android:style/Theme.Translucent"
+    android:gravity="left"
+    android:padding="1dp"
+    android:background="@color/bg_main">
+
+    <ScrollView android:id="@+id/ScrollView01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:paddingStart="5dp"
+        android:layout_alignParentRight="false"
+        android:paddingEnd="5dp"
+        android:layout_gravity="bottom"
+        android:padding="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="2dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/txtName"
+                android:gravity="center_vertical|center_horizontal"
+                android:capitalize="words"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="top|left|center_vertical"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="#24252a"
+                android:hint="Recipe Name"
+                android:maxLength="60"
+                android:padding="2dp"
+                android:background="#e1ecff" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="#607D8B"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView android:id="@+id/ImageView01"
+                            android:layout_width="wrap_content" android:layout_height="match_parent"
+                            android:layout_gravity="center_horizontal|top"
+                            android:src="@drawable/def"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true" />
+
+                        <ProgressBar
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/progressBar"
+                            android:visibility="invisible"
+                            android:layout_gravity="right"
+                            android:layout_alignParentLeft="false"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/btnUpload"
+                            android:layout_toStartOf="@+id/btnUpload" />
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:src="@mipmap/ic_upload"
+                            android:id="@+id/btnUpload"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:background="@android:color/transparent"
+                            android:padding="1dp" />
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/ic_save"
+                            android:id="@+id/btnSave"
+                            android:layout_below="@+id/btnUpload"
+                            android:layout_alignRight="@+id/btnUpload"
+                            android:layout_alignEnd="@+id/btnUpload"
+                            android:background="@android:color/transparent"
+                            android:padding="1dp" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="#e1ecff"
+                    android:layout_gravity="center"
+                    android:gravity="fill_horizontal|center_vertical">
+                    <TextView android:layout_height="wrap_content"
+                        android:layout_width="80dp"
+                        android:id="@+id/txt1"  android:text=" Category : "
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+                    <Spinner
+                        android:id="@+id/categories"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/categories"
+                        android:prompt="@string/choose_category"
+                        android:hint="Category"
+                        android:spinnerMode="dialog"
+                        android:background="@android:color/darker_gray" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="#FFFFFF"
+                    android:layout_gravity="center"
+                    android:gravity="fill_horizontal|center_vertical">
+                    <TextView android:layout_height="wrap_content"
+                        android:layout_width="80dp"
+                        android:id="@+id/txt2"  android:text=" Cuisine : "
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+                    <Spinner
+                        android:id="@+id/cuisines"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/cuisines"
+                        android:prompt="@string/choose_cuisine"
+                        android:hint="Cuisines"
+                        android:spinnerMode="dialog"
+                        android:background="@android:color/darker_gray" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:text="" android:id="@+id/txt5"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:hint="Description"
+                android:textColor="@color/black"
+                android:padding="2dp"
+                android:textStyle="bold"
+                android:background="@android:color/darker_gray"
+                android:gravity="center" />
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#e1ecff">
+                    <ImageView
+                        android:id="@+id/btDesc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/ic_signup"
+                        android:layout_centerVertical="true" />
+                    <TextView android:text="" android:id="@+id/txtDesc"
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:hint="Description"
+                        android:textColor="@color/black"
+                        android:gravity="top"
+                        android:typeface="normal"
+                        android:elegantTextHeight="false"
+                        android:capitalize="sentences"
+                        android:padding="2dp" />
+                </LinearLayout>
+                <TextView android:text="" android:id="@+id/txt3"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:hint="Ingredients"
+                    android:textColor="@color/black"
+                    android:padding="2dp"
+                    android:textStyle="bold"
+                    android:background="@android:color/darker_gray"
+                    android:gravity="center" />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF">
+                    <ImageView
+                        android:id="@+id/btIng"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/ic_signup"
+                        android:layout_centerVertical="true" />
+                    <TextView android:text="" android:id="@+id/txtIngredients"
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:hint="Ingredients"
+                        android:textColor="@color/black"
+                        android:gravity="top"
+                        android:typeface="normal"
+                        android:elegantTextHeight="false"
+                        android:capitalize="sentences"
+                        android:maxLength="1500"
+                        android:autoText="false"
+                        android:padding="2dp" />
+                </LinearLayout>
+                <TextView android:text="" android:id="@+id/txt4"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:hint="Procedure"
+                    android:textColor="@color/black"
+                    android:padding="2dp"
+                    android:textStyle="bold"
+                    android:background="@android:color/darker_gray"
+                    android:gravity="center" />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#e1ecff">
+                    <ImageView
+                        android:id="@+id/btSteps"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/ic_signup"
+                        android:layout_centerVertical="true" />
+                    <TextView android:text="" android:id="@+id/txtSteps"
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:hint="Procedure"
+                        android:textColor="@color/black"
+                        android:gravity="top"
+                        android:typeface="normal"
+                        android:elegantTextHeight="false"
+                        android:capitalize="sentences"
+                        android:maxLength="1500"
+                        android:padding="2dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

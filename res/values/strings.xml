@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">HortiCare NZ</string>
+
+    <string name="title_section1">Library</string>
+    <string name="title_section2">Seasons</string>
+    <string name="title_section3">Category</string>
+    <string name="title_section4">Type</string>
+    <string name="title_section5">FAQ</string>
+    <string name="title_section6">Close</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="choose_category">Choose Category</string>
+    <string name="choose_cuisine">Choose Cuisine</string>
+
+    <string-array name="categories">
+        <item>Main (Vegetarian)</item>
+        <item>Main (Non-Vegetarian)</item>
+        <item>Beverages</item>
+        <item>Desserts</item>
+        <item>Appetizer</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="cuisines">
+        <item>African</item>
+        <item>American</item>
+        <item>British</item>
+        <item>Carribean</item>
+        <item>Chinese</item>
+        <item>East European</item>
+        <item>Greek</item>
+        <item>Indian</item>
+        <item>Irish</item>
+        <item>Japanese</item>
+        <item>Italian</item>
+        <item>Mexican</item>
+        <item>Nordic</item>
+        <item>North African</item>
+        <item>Portuguese</item>
+        <item>South American</item>
+        <item>Spanish</item>
+        <item>South East Asian</item>
+        <item>Middle Eastern</item>
+    </string-array>
+
+    <string-array name="cuisines_id">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:theme="@android:style/Theme.Translucent"
+    android:gravity="left"
+    android:padding="1dp"
+    android:background="@color/bg_main">-->
+
+    <ScrollView android:id="@+id/mainScrollView" xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:paddingStart="5dp"
+        android:layout_alignParentRight="false"
+        android:paddingEnd="5dp"
+        android:layout_gravity="bottom"
+        android:padding="2dp"
+    android:background="@color/white">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="2dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:id="@+id/txtName"
+                        android:gravity="left|center_vertical|center_horizontal"
+                        android:capitalize="words"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="top|left|center_vertical"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:textColor="#3447ff"
+                        android:hint="Name"
+                        android:maxLength="60"
+                        android:padding="2dp"
+                        android:background="#e1ecff" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="by Chris Ramirez"
+                        android:id="@+id/txtAuthor"
+                        android:gravity="left"
+                        android:capitalize="words"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="top|left|center_vertical"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:textColor="#131314" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView android:id="@+id/ImageView01"
+                        android:layout_width="match_parent" android:layout_height="150dp"
+                        android:layout_gravity="center_horizontal|top"
+                        android:src="@mipmap/ic_launcher"
+                        android:background="#fffded" />
+
+                    <ProgressBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/progressBar"
+                        android:visibility="invisible"
+                        android:layout_gravity="right"
+                        android:layout_centerInParent="true"  />
+
+                </RelativeLayout>
+
+                    <TextView android:text="" android:id="@+id/txtDesc"
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:textSize="12dp"
+                        android:hint="Description"
+                        android:textColor="@color/black"
+                        android:padding="2dp"
+                        android:gravity="left|center"
+                        android:background="@color/white" />
+
+
+                <!--
+                            <TextView
+                                android:text=""
+                                android:id="@+id/txtAttributes"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="12dp"
+                                android:hint="Attributes"
+                                android:textColor="@color/black"
+                                android:padding="2dp"
+                                android:gravity="left|center"
+                                android:background="@color/white" />-->
+
+
+                </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/attr_layout">
+
+                <ExpandableListView
+                    android:id="@+id/attributes"
+                    android:layout_height="fill_parent"
+                    android:layout_width="match_parent"
+                    android:scrollbars="vertical" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+</ScrollView>
